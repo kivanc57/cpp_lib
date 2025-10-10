@@ -4,7 +4,7 @@
 
 bool contains_array(const std::vector<std::string>& seq, const std::string& elem){
 
-    for(unsigned int i = 0; i < seq.size(); i++){
+    for(std::size_t i = 0; i < seq.size(); i++){
         if(seq[i] == elem)
             return true;
     }

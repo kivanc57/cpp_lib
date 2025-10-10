@@ -4,7 +4,7 @@
 int square_sum(const std::vector<int>& numbers){
     int squared_sum = 0;
 
-    for(unsigned int i = 0; i < numbers.size(); i++){
+    for(std::size_t i = 0; i < numbers.size(); i++){
         squared_sum += numbers[i] * numbers[i];
     }
     return squared_sum;

@@ -11,14 +11,14 @@ int sum_array(const vector<int> numbers)
     int highestNum = numbers[0];
     int lowestNum = numbers[0];
 
-    for(unsigned int i = 0; i < numbers.size(); i++){
+    for(std::size_t i = 0; i < numbers.size(); i++){
       if (numbers[i] > highestNum){
           highestNum = numbers[i];
       } else if (numbers[i] < lowestNum){
           lowestNum = numbers[i];
       }
     }
-    for(unsigned int i = 0; i < numbers.size(); i++){
+    for(std::size_t i = 0; i < numbers.size(); i++){
         if(numbers[i] != highestNum && numbers[i] != lowestNum){
             sum += numbers[i];
         }
