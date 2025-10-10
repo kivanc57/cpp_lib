@@ -28,7 +28,7 @@ int sum_array(const vector<int> numbers)
 
 int main(int /*argc*/, char** /*argv[]*/) {
     vector<int> nums = {1, 2, 3, 4, 5};
-    cout << sum_array(nums) << std::endl;
+    std::cout << sum_array(nums) << std::endl;
     return 0;
 }
 
