@@ -15,7 +15,7 @@ std::string abbrevName(std::string name)
     return initials;
 }
 
-int main(int /*argc*/, char** /*argh[v]*/)
+int main(int /*argc*/, char** /*argv[]*/)
 {
     std::string name = "Kivanc Gordu";
     std::cout << abbrevName(name) << std::endl;
