@@ -3,9 +3,7 @@
 
 std::string boolean_to_string(bool b)
 {
-    if(b == true)
-        return "true";
-    return "false";
+    return b ? "true" : "false";
 }
 
 int main(int /*argc*/, char** /*argv[]*/)
