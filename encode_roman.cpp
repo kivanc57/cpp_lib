@@ -3,7 +3,7 @@
 #include <utility>
 #include <vector>
 
-std::string solution(int number)
+std::string encode_roman(int number)
 {
     std::vector<std::pair<std::string, int>> roman =
     {
@@ -40,7 +40,7 @@ int main(int /*argc*/, char** /*argv[]*/)
 {
     int numb = 1666;
 
-    std::cout << solution(numb) << std::endl;
+    std::cout << encode_roman(numb) << std::endl;
     
     return 0;
 }
