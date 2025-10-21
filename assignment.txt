@@ -1,39 +1,3 @@
-1. Array
-
-Write a program that takes an array of 10 integers from the user and prints the sum and average.
-
-2. Vector
-
-Write a program that reads integers until the user inputs -1, stores them in a std::vector, then prints the vector in reverse order.
-
-3. Linked List (std::list)
-
-Create a program that maintains a list of integers. Implement the following operations:
-
-Add element at front
-
-Add element at back
-
-Remove element from front
-
-Remove element from back
-
-Print all elements
-
-4. Deque (std::deque)
-
-Write a program that simulates a double-ended queue of strings. Implement commands:
-
-push_front <string>
-
-push_back <string>
-
-pop_front
-
-pop_back
-
-print (print all elements from front to back)
-
 5. Stack
 
 Create a program that uses a stack to check if a string containing parentheses ( and ) is balanced or not.

@@ -1,6 +1,8 @@
 #include <list>
 #include <iostream>
 #include <string>
+#include <list>
+#include <deque>
 
 template <typename Container>
 void print_container(const Container& c)
@@ -9,12 +11,13 @@ void print_container(const Container& c)
         std::cout << *it << std::endl;
 }
 
-void manage_list()
+template <typename Container>
+void manage_container()
 {   
+    Container myNumbers;
     int number;
     std::string direction;
     std::string command;
-    std::list <int>myList;
 
     while(true)
     {
@@ -23,7 +26,7 @@ void manage_list()
 
         if (command == "print")
         {
-            print_container(myList);
+            print_container(myNumbers);
             break;
         }
         std::cout << "give me a number (1-9): ";
@@ -33,13 +36,13 @@ void manage_list()
         std::cin >> direction;
        
         if(direction == "front" && command == "add")
-            myList.push_front(number);
+            myNumbers.push_front(number);
         else if (direction == "back" && command == "add")
-            myList.push_back(number);
+            myNumbers.push_back(number);
         else if (direction == "front" && command == "remove")
-            myList.pop_front();
+            myNumbers.pop_front();
         else if (direction == "back" && command == "remove")
-            myList.pop_back();
+            myNumbers.pop_back();
 
         std::cout << "------------------------------" << std::endl;
     }
@@ -47,7 +50,17 @@ void manage_list()
 
 int main(int /*argc*/, char** /*argv[]*/)
 {
-    manage_list();
+    std::string data_struct;
+    std::cout << "do you want a 'list' or 'deque'?: ";
+    std::cin >> data_struct;
+
+    if(data_struct == "list")
+        manage_container<std::list<int>>();
+    else if(data_struct == "deque")
+        manage_container<std::deque<int>>();
+    else
+        std::cout << "Invalid input\n";
+
     return 0;
 }
 
