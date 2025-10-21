@@ -26,5 +26,6 @@ void init_vector()
 int main(int /*argc*/, char** /*argv[]*/)
 {
     init_vector();
+    return 0;
 }
 
